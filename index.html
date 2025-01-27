@@ -11,6 +11,10 @@
     <script src="https://kit.fontawesome.com/56b7e7174e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
 </head>
 <body class="bg-amber-50 text-slate-800">
 
@@ -19,7 +23,7 @@
             <button class="fixed right-6 top-6 w-[50px] h-[50px] amber-50 bg-slate-800 p-3 rounded-3xl">
                 <i class="fa-solid fa-bars"></i>
             </button>
-            <div id="dropdown-content" class="fixed right-6 top-10 hidden text-right pt-6">
+            <div id="dropdown-content" class="fixed right-6 top-12 hidden text-right pt-6">
                 <a href="#intro" class="block p-2">Intro</a>
                 <a href="#career" class="block p-2">Career</a>
                 <a href="#code" class="block p-2">Coding</a>
@@ -33,47 +37,47 @@
 
         <div class="flex flex-col items-center gap-4 mx-10 mt-40 text-center">
             <div>
-                <img src="Images/Avatar.png" alt="stylised drawing of Ben Cornell">
+                <img src="Images/Avatar.png" class="w-[450px]" alt="stylised drawing of Ben Cornell">
                 <!-- <img src="Images/profileBG.png" alt=""> -->
             </div>
-            <h1 class="text-4xl">I'm Ben Cornell</h1>
-            <p>I'm an <strong class="nameadd">architect</strong> & an aspiring <strong class="nameadd">Software Engineer</strong>.
+            <h1 id="name" class="text-4xl pb-20">I'm Ben Cornell</h1>
+            <p class="max-w-[700px]">I'm an <strong class="text-xl mx-1 font-normal">architect</strong> & an aspiring <strong class="text-xl mx-1 font-normal">Software Engineer</strong>.
                 I have always had an interest in coding since editing a MySpace page, and recently I have had the opportunity to greatly expand on these skills.
-                My architectural background has given me good <strong class="nameadd">communication skills, problem solving abilities, and the ability to collaborate</strong> well on projects</p>
+                My architectural background has given me good <strong class="text-xl mx-1 font-normal">communication skills, problem solving abilities, and the ability to collaborate</strong> well on projects</p>
         </div>
    
-        <img src="Images/geo1.png" class="max-w-80 m-w-[40%]" alt="">
+        <img src="Images/geo1.png" class="w-[500px] max-w-[40%]" alt="">
 
         <div id="career" class="flex flex-col items-center gap-4 px-10 text-center">
             <h4 class="text-2xl">Career and qualifications</h4>
-            <p>I have been working as an <strong class="eduemp">Architect and Senior Architect</strong> since August 2021 where I have been responsible for managing a range of projects of values up to <i>&#163</i>4 million. Maybe I should add a gallery of my projects here which could be interactive?</p>
-            <p >GCSE's, A Levels, BArch, MArch, Diploma, ARB chartered, NCFE Level 2 Certificate in Understanding Coding.</p>
-            <a href="images/BenCV.pdf" download="Ben Cornell - CV"> <button class="cvDownload">View my C.V.</button> </a>
+            <p class="max-w-[700px]">I have been working as an <strong class="text-xl mx-1 font-normal"> Architect and Senior Architect</strong> since August 2021 where I have been responsible for managing a range of projects of values up to <i>&#163</i>4 million. Maybe I should add a gallery of my projects here which could be interactive?</p>
+            <p class="max-w-[700px]">GCSE's, A Levels, BArch, MArch, Diploma, ARB chartered, NCFE Level 2 Certificate in Understanding Coding.</p>
+            <a  class="text-2xl mx-1 font-normal underline" href="images/BenCV.pdf" download="Ben Cornell - CV"> <button>View my C.V.</button> </a>
         </div>
 
-        <img src="Images/geo2.png" class="max-w-80 m-w-[40%]" alt="">
+        <img src="Images/geo2.png" class="w-[500px] max-w-[40%]" alt="">
 
         <div id="code" class="flex flex-col items-center gap-4 px-10 text-center">
             <h4 class="text-2xl">Coding experience</h4>
-            <p>Enter information on coding experience, links to projects, etc including information on <strong class="codingemp">iO Academy</strong> and some descriptions of the distance learning <strong class="codingemp">NCFE Level 2 Certificate in Understanding Coding</strong>. Make sure I mention what languages I can use.</p>
-            <div id="projectGrid" class="grid grid-cols-2 w-[500px] border">
-
+            <p class="max-w-[700px]">Enter information on coding experience, links to projects, etc including information on <strong class="text-xl mx-1 font-normal">iO Academy</strong> and some descriptions of the distance learning <strong class="text-xl mx-1 font-normal">NCFE Level 2 Certificate in Understanding Coding</strong>. Make sure I mention what languages I can use.</p>
+            <h4 class="text-2xl mt-10">Coding Projects</h4>
+            <div id="projectGrid" class="grid grid-cols-2 m-w-[90%] mt-10">
             </div>
         </div>
 
-        <img src="Images/geo3.png" class="max-w-80 m-w-[40%]" alt="">
+        <img src="Images/geo3.png" class="w-[500px] max-w-[40%]" alt="">
 
         <div id="about" class="flex flex-col items-center gap-4 px-10 text-center">
             <h4 class="text-2xl">About Me</h4>
-            <p>Describe my hobbies and interests, making sure to mention <strong class="aboutemp">computer games, board games, and cooking</strong> as well as reading, dog walks, etc.</p>
+            <p class="max-w-[700px]">Describe my hobbies and interests, making sure to mention <strong class="text-xl mx-1 font-normal">computer games, board games, and cooking</strong> as well as reading, dog walks, etc.</p>
         </div>
 
         <!-- placeholder image -->
-        <img src="Images/geo1.png" class="max-w-80 m-w-[40%]" alt=""> 
+        <img src="Images/geo1.png" class="w-[500px] max-w-[40%]" alt=""> 
 
         <div id="contact" class="flex flex-col items-center gap-4 px-10 text-center">
             <h4 class="text-2xl">Contact</h4>
-            <p class="mb-20">Contact information with email address <a href="mailto:ben.james.cornell@gmail.com">ben.james.cornell@gmail.com</a> and phone number <a href="tel:07403717788">07403717788</a> or I could even make this a contact form pop up?</p>
+            <p class="max-w-[700px] mb-20">Contact information with email address <a href="mailto:ben.james.cornell@gmail.com">ben.james.cornell@gmail.com</a> and phone number <a href="tel:07403717788">07403717788</a> or I could even make this a contact form pop up?</p>
         </div>
         
     </main>

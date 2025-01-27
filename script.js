@@ -1,5 +1,8 @@
 "use strict";
 
+
+// dropdown menu
+
 const drop = document.querySelector('#dropdown');
 
 drop.addEventListener('mouseenter', show);
@@ -18,6 +21,28 @@ function hide() {
 
 
 
+// // typewriter effect
+
+var character = 0;
+const txt = 'I am Ben Cornell';
+const typeSpeed = 70;
+const nameText = document.getElementById("name")
+
+
+function typeWriter() {
+  if (character < txt.length) {
+    nameText.innerText += txt.charAt(character);
+    character++;
+    setTimeout(typeWriter, typeSpeed);
+  }
+}
+
+nameText.addEventListener('focus', typeWriter)
+
+
+
+// json import and grid items
+
 const projectGrid = document.getElementById('projectGrid')
 
 fetch('./Projects/projects.json')
@@ -30,7 +55,8 @@ fetch('./Projects/projects.json')
         const projectInfo = document.createElement("p");
         projectPhoto.src = info.image;
         projectPhoto.alt = info.alt;
-        projectInfo.innerText = `${info.title}, ${info.description}`;
+        projectPhoto.classList.add("h-[250px]")
+        projectInfo.innerText = `${info.title} \n ${info.description} \n ${info.link}`;
         projectGrid.appendChild(projectPhoto);
         projectGrid.appendChild(projectInfo)
         });
