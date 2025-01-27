@@ -24,20 +24,35 @@ function hide() {
 // // typewriter effect
 
 var character = 0;
-const txt = 'I am Ben Cornell';
-const typeSpeed = 70;
+const txt = 'I am Ben Cornell_';
 const nameText = document.getElementById("name")
 
+function cursorBlink() {
+    nameText.textContent = nameText.textContent.slice(0, -1);
+    nameText.textContent += "_";
+    setTimeout(cursorBlinkOff, 140);
+}
+
+function cursorBlinkOff() {
+    nameText.textContent = nameText.textContent.slice(0, -1);
+    nameText.textContent += "-"
+    setTimeout(cursorBlink, 140);
+}
 
 function typeWriter() {
   if (character < txt.length) {
-    nameText.innerText += txt.charAt(character);
+    nameText.textContent += txt.charAt(character);
     character++;
-    setTimeout(typeWriter, typeSpeed);
+    setTimeout(typeWriter, 70);
   }
-}
+  else {
+    cursorBlink();
+    }
 
-nameText.addEventListener('focus', typeWriter)
+    
+  }
+
+typeWriter();
 
 
 
