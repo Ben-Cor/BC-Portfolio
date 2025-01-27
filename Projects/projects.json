@@ -1,0 +1,25 @@
+{
+    "projects": [
+        {
+            "title": "My first project",
+            "description": "It is great",
+            "image": "projects/project-Images/project_1.jpg",
+            "alt": "some alt text",
+            "link": "https://github.com/wowie"
+        },
+        {
+            "title": "My second project",
+            "description": "it's so good",
+            "image": "projects/project-Images/project_2.jpg",
+            "alt": "some alt text",
+            "link": "https://github.com/zowie"
+        },
+        {
+            "title": "My third project",
+            "description": "it's also good",
+            "image": "projects/project-Images/project_3.jpg",
+            "alt": "some alt text",
+            "link": "https://github.com/kapowie"
+        }
+    ]
+}
