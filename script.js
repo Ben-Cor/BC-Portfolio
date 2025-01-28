@@ -92,6 +92,7 @@ fetch('./Projects/projects.json')
         projectLink.target='blank'
         projectLink.innerText = `${info.title}`;
         projectInfo.classList.add("mx-8")
+        projectLink.classList.add("text-xl");
         projectGrid.appendChild(projectPhoto);
         projectGrid.appendChild(projectLink);
         projectGrid.appendChild(projectInfo);
