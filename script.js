@@ -24,36 +24,50 @@ function hide() {
 // // typewriter effect
 
 var character = 0;
-const txt = 'I am Ben Cornell_';
+const txt = '<h1> I am Ben Cornell </h1>';
 const nameText = document.getElementById("name")
 
-function cursorBlink() {
-    nameText.textContent = nameText.textContent.slice(0, -1);
-    nameText.textContent += "_";
-    setTimeout(cursorBlinkOff, 140);
-}
-
-function cursorBlinkOff() {
-    nameText.textContent = nameText.textContent.slice(0, -1);
-    nameText.textContent += "-"
-    setTimeout(cursorBlink, 140);
-}
-
 function typeWriter() {
-  if (character < txt.length) {
+    if (character < txt.length){
     nameText.textContent += txt.charAt(character);
     character++;
     setTimeout(typeWriter, 70);
   }
   else {
-    cursorBlink();
-    }
+    typeWriter2();
+  }
+}
 
-    
+var character2 = 0;
+const txt2 = '<p> I code things </p>_';
+const codeText = document.getElementById("iCode");
+
+function cursorBlink() {
+    codeText.textContent = codeText.textContent.slice(0, -1);
+    codeText.textContent += "|";
+    setTimeout(cursorBlinkOff, 240);
+}
+
+function cursorBlinkOff() {
+    codeText.textContent = codeText.textContent.slice(0, -1);
+    codeText.innerText += "\u200c"
+    setTimeout(cursorBlink, 240);
+}
+
+
+function typeWriter2() {
+  if (character2 < txt2.length) {
+    codeText.textContent += txt2.charAt(character2);
+    character2++;
+    setTimeout(typeWriter2, 70);
+  }
+  else {
+    cursorBlink();
+    } 
   }
 
-typeWriter();
 
+typeWriter();
 
 
 // json import and grid items

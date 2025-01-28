@@ -12,6 +12,12 @@ h1 {
     font-style: normal;
   }
 
+h2 {
+    font-family: "Cutive Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
   h4 {
     font-family: "Cutive Mono", serif;
     font-weight: 400;
@@ -32,7 +38,7 @@ h1 {
 
 html {
   background: rgb(255,251,235);
-  background: linear-gradient(90deg, rgba(255,251,235,0.93) 44%, rgba(254,243,199,0.93) 100%), url(Images/grunge.jpg); 
+  background: linear-gradient(90deg, rgba(255,251,235,0.99) 44%, rgba(254,243,199,0.99) 100%), url(Images/grunge.jpg); 
   background-size: 100% 100%;
 }
 
@@ -44,6 +50,18 @@ html {
 }
 
 #career {
+  background: rgb(147,197,253);
+  background: linear-gradient(90deg, rgba(147,197,253,0.43) 50%, rgba(59,130,246,0.43) 86%) url(Images/grunge.jpg);  
+  background-size: 100% 100%;
+}
+
+#about {
+  background: rgb(30,41,59);
+  background: linear-gradient(90deg, rgba(30,41,59,0.53) 50%, rgba(0, 0, 0, 0.53) 86%) url(Images/grunge.jpg); 
+  background-size: 100% 100%;
+}
+
+#contact {
   background: rgb(147,197,253);
   background: linear-gradient(90deg, rgba(147,197,253,0.43) 50%, rgba(59,130,246,0.43) 86%) url(Images/grunge.jpg);  
   background-size: 100% 100%;
