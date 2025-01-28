@@ -1,17 +1,17 @@
 {
     "projects": [
         {
-            "title": "My first project",
-            "description": "It is great",
+            "title": "Space invaders game",
+            "description": "A JavaScript version of this classic game",
             "image": "projects/project-Images/project_1.jpg",
-            "alt": "some alt text",
+            "alt": "Screenshot of a space invaders style game",
             "link": "https://github.com/wowie"
         },
         {
-            "title": "My second project",
-            "description": "it's so good",
+            "title": "A to-do list app",
+            "description": "An app built with React that allows users to track tasks with reminders, tags, and classes that can be assigned.",
             "image": "projects/project-Images/project_2.jpg",
-            "alt": "some alt text",
+            "alt": "To-do list app screenshot",
             "link": "https://github.com/zowie"
         },
         {

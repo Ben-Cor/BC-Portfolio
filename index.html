@@ -19,74 +19,83 @@
 <body class="text-slate-800">
 <!-- <img src="Images/grunge.jpg" alt="" id="bgImage" class="fixed z-0 opacity-10 items-stretch"> -->
 
-    <header id="intro">
+    <header id="top">
         <div id="dropdown" class="py-6 pl-4">
             <button class="fixed right-6 top-6 w-[50px] h-[50px] amber-50 bg-slate-800 p-3 rounded-3xl">
                 <i class="fa-solid fa-bars"></i>
             </button>
             <div id="dropdown-content" class="fixed right-6 top-12 hidden text-right pt-6">
-                <a href="#intro" class="block p-2">Intro</a>
-                <a href="#career" class="block p-2">Career</a>
-                <a href="#code" class="block p-2">Coding</a>
-                <a href="#about" class="block p-2">About</a>
-                <a href="#contact" class="block p-2">Contact</a>
+                <a href="#intro" class="block p-2 m-2 bg-amber-50 rounded-2xl">Intro</a>
+                <a href="#career" class="block p-2 m-2 bg-amber-50 rounded-2xl">Career</a>
+                <a href="#code" class="block p-2 m-2 bg-amber-50 rounded-2xl">Coding</a>
+                <a href="#about" class="block p-2 m-2 bg-amber-50 rounded-2xl">About</a>
+                <a href="#contact" class="block p-2 m-2 bg-amber-50 rounded-2xl">Contact</a>
             </div>
         </div>
     </header>
     
-    <main class="flex flex-col items-center gap-y-40">
+    <main class="flex flex-col items-center">
 
-        <div class="flex flex-col items-center gap-4 mx-10 mt-40 text-center">
-            <div>
-                <img src="Images/Avatar.png" class="w-[450px]" alt="stylised drawing of Ben Cornell">
-                <!-- <img src="Images/profileBG.png" alt=""> -->
-            </div>
-            <h1 id="name" class="text-4xl pb-20"></h1>
-            <p class="max-w-[700px] bg-slate-800 text-amber-50 p-4 rounded-3xl shadow-2xl mt-40">I'm an <strong class="text-xl mx-1 font-normal">architect</strong> & an aspiring <strong class="text-xl mx-1 font-normal">Software Engineer</strong>.
+        
+        <div class="h-[100vh] pt-[20vh] flex flex-col items-center gap-4 px-10 text-center">
+            <img src="Images/Avatar.png" class="w-[450px]" alt="stylised drawing of Ben Cornell">
+            <!-- <img src="Images/profileBG.png" alt=""> -->
+            <h1 id="name" class="text-4xl"></h1>
+        </div>
+            
+
+
+        <div id="intro" class="flex flex-col items-center text-center py-[40vh] ">
+            <p class="max-w-[70%] text-amber-50 p-4 rounded-3xl">I'm an <strong class="text-xl mx-1 font-normal">architect</strong> & an aspiring <strong class="text-xl mx-1 font-normal">Software Engineer</strong>.
                 I have always had an interest in coding since editing a MySpace page when I was young, and recently I have had the opportunity to greatly expand on these skills through a software development bootcamp.
                 My architectural background has given me good <strong class="text-xl mx-1 font-normal">communication skills, problem solving abilities, and the ability to collaborate</strong> well on projects</p>
+            <img src="Images/geo1.png" class="w-[300px] max-w-[40%] pt-[10%]" alt="">
         </div>
    
 
 
-        <img  id="career" src="Images/geo1.png" class="w-[300px] max-w-[40%]" alt="">
+        
 
 
 
-        <div class="flex flex-col items-center mx-10 text-center gap-6 max-w-[700px] bg-blue-300 text-slate-800 p-4 rounded-3xl shadow-2xl">
-            <h4 class="text-2xl">Career and qualifications</h4>
-            <p>I have been working as an <strong class="text-xl mx-1 font-normal"> Architect and Senior Architect</strong> since 2015 where I have been responsible for managing both teams of architects and a range of projects of values up to <i>&#163</i>4 million.
-                I have obtained a variety of qualification which include GCSE's, A Levels, <strong class="text-xl mx-1 font-normal">a bachelor's and a master's degree in Architecture,</strong> and a diploma in Architectural Professional Practice. In additon, I have been ARB chartered and a member of the RIBA. Recently, I have also obtained a NCFE Level 2 Certificate in Understanding Coding.</p>
-            <p>A copy of my C.V. is available to download using the link below.</p>
-            <a  class="text-2xl mx-1 font-normal" href="images/BenCV.pdf" download="Ben Cornell - CV"> <button>View my C.V.</button> </a>
+        <div id="career" class="flex flex-col items-center text-center text-slate-800 py-[40vh]">
+            <div class="max-w-[70%]">
+                <h4 class="text-2xl">Career and qualifications</h4>
+                <p class="mt-6">I have been working as an <strong class="text-xl mx-1 font-normal"> Architect and Senior Architect</strong> since 2015 where I have been responsible for managing both teams of architects and a range of projects of values up to <i>&#163</i>4 million.
+                    I have obtained a variety of qualification which include GCSE's, A Levels, <strong class="text-xl mx-1 font-normal">a bachelor's and a master's degree in Architecture,</strong> and a diploma in Architectural Professional Practice. In additon, I have been ARB chartered and a member of the RIBA. Recently, I have also obtained a NCFE Level 2 Certificate in Understanding Coding.</p>
+                <p class="mt-6">A copy of my C.V. is available to download using the link below.</p>
+                <a  class="text-2xl mx-1 font-normal" href="images/BenCV.pdf" download="Ben Cornell - CV"> <button>View my C.V.</button> </a>
+            </div>
+            <img src="Images/geo2.png" class="w-[300px] max-w-[40%] pt-[10%]" alt="">
         </div>
 
 
 
-        <img src="Images/geo2.png" class="w-[300px] max-w-[40%]" alt="">
+        
 
 
 
-        <div id="code" class="flex flex-col items-center gap-4 mx-10 text-center max-w-[700px] bg-slate-800 text-amber-50 p-4 rounded-3xl shadow-2xl">
+        <div id="code" class="flex flex-col items-center gap-4 mx-10 text-center max-w-[700px] p-4 my-[40vh]">
             <h4 class="text-2xl">Coding experience</h4>
             <p>During my iO academy bootcamp and throughout my own experiences, I have used a variety of programming and markup languages such as <strong class="text-xl mx-1 font-normal">HTML, CSS, JavaScript, and SQL.</strong> 
                 In additon, I have utilised several frameworks and libraries such as <strong class="text-xl mx-1 font-normal">Tailwind and React</strong>.  
                 While undertaking a distance learning course in order to obtain a <strong class="text-xl mx-1 font-normal">NCFE Level 2 Certificate in Understanding Coding</strong>, I learnt about the development lifecycle as well as best practice and technical terminology.
-                Below you can see some of the project I have developed.</p>
+                Below you can see some of the projects I have developed.</p>
             <h4 class="text-2xl mt-10">Coding Projects</h4>
-            <div id="projectGrid" class="grid grid-cols-2 m-w-[90%] my-10">
+            <div id="projectGrid" class="grid grid-cols-3 gap-8 justify-center items-center m-w-[90%] my-2">
             </div>
         </div>
 
 
 
-        <img src="Images/geo3.png" class="w-[300px] max-w-[40%]" alt="">
+        
 
 
 
-        <div id="about" class="flex flex-col items-center gap-4 mx-10 text-center max-w-[700px] bg-blue-300 text-slate-800 p-4 rounded-3xl shadow-2xl">
+        <div id="about" class="flex flex-col items-center gap-4 mx-10 text-center max-w-[700px] bg-blue-300 text-slate-800 p-4 rounded-3xl shadow-2xl mb-[80vh]">
             <h4 class="text-2xl">About Me</h4>
             <p class="mb-4">When I am not coding, my hobbies and interests include <strong class="text-xl mx-1 font-normal">computer games, board games, and cooking</strong> as well as reading (mainly sci-fi or fantasy), long dog walks in the countryside, or meeting up with friends in a cosy pub.</p>
+            <img src="Images/geo3.png" class="w-[300px] max-w-[40%] mt-[10%]" alt="">
         </div>
 
 
@@ -96,7 +105,7 @@
 
 
 
-        <div id="contact" class="flex flex-col items-center gap-4 mx-10 text-center max-w-[700px] bg-slate-800 text-amber-50 p-4 rounded-3xl shadow-2xl mb-20">
+        <div id="contact" class="flex flex-col items-center gap-4 mx-10 text-center max-w-[700px] bg-slate-800 text-amber-50 p-4 rounded-3xl shadow-2xl mb-[30vh]">
             <h4 class="text-2xl">Contact</h4>
             <p>If you would like to get in touch, please either send me an email at the address <a href="mailto:ben.james.cornell@gmail.com">ben.james.cornell@gmail.com</a> and or give me a call or text using <a href="tel:07403717788">07403717788</a></p>
         </div>
@@ -109,7 +118,7 @@
         <a class="p-2 mx-4 rounded-2xl bg-slate-800" href=https://www.linkedin.com/in/ben-cornell-a7228455/ >
             <i class="fa-brands fa-linkedin-in"></i>
         </a>
-        <a href="#intro" class="fixed bottom-4 right-6 px-4 py-3 bg-slate-800 h-12 rounded-3xl">
+        <a href="#top" class="fixed bottom-4 right-6 px-4 py-3 bg-slate-800 h-12 rounded-3xl">
             <i class="fa-solid fa-arrow-up"></i>
         </a>
     </footer>

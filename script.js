@@ -68,11 +68,19 @@ fetch('./Projects/projects.json')
         data.projects.forEach((info) => {
         const projectPhoto = document.createElement("img");
         const projectInfo = document.createElement("p");
+        const projectLink = document.createElement("a")
         projectPhoto.src = info.image;
         projectPhoto.alt = info.alt;
-        projectPhoto.classList.add("h-[250px]")
-        projectInfo.innerText = `${info.title} \n ${info.description} \n ${info.link}`;
+        projectPhoto.classList.add("m-w-[20%]")
+        projectPhoto.classList.add("w-96")
+        projectInfo.innerText =  `${info.description} \n \n`;
+        projectLink.href = `${info.link}`;
+        projectLink.target='blank'
+        projectLink.innerText = `${info.title}`;
+        projectInfo.classList.add("mx-8")
         projectGrid.appendChild(projectPhoto);
-        projectGrid.appendChild(projectInfo)
+        projectGrid.appendChild(projectLink);
+        projectGrid.appendChild(projectInfo);
+        
         });
     })
