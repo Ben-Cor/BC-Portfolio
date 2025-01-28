@@ -29,3 +29,10 @@ h1 {
     font-weight: 400;
     font-style: normal;
   }
+
+html {
+  background: rgb(255,251,235);
+  background: linear-gradient(90deg, rgba(255,251,235,0.96) 44%, rgba(254,243,199,0.96) 100%), url(Images/grunge.jpg); 
+  background-size: 100% 100%;
+}
+
