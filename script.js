@@ -82,20 +82,20 @@ fetch('./Projects/projects.json')
         data.projects.forEach((info) => {
 
         const mainDiv = document.createElement("div");
-        mainDiv.classList.add("block")
+        mainDiv.classList.add("inline-block", "relative")
 
         const hoverDiv = document.createElement("div");
-        hoverDiv.classList.add("absolute", "inset-0", "flex", "flex-col", "items-center", "justify-center", "opacity-0", "hover:opacity-100", "bg-amber-50", "bg-opacity-50", "transition-opacity", "duration-250")
+        hoverDiv.classList.add("md:absolute", "w-[100%]", "inset-0", "flex", "flex-col", "items-center", "justify-center", "md:opacity-0", "md:hover:opacity-100", "md:bg-amber-50", "pt-8", "md:bg-opacity-90", "transition-opacity", "duration-550", "rounded-xl")
         
 
         const projectPhoto = document.createElement("img");
         projectPhoto.src = info.image;
         projectPhoto.alt = info.alt;
-        projectPhoto.classList.add("transition-all", "duration-250", "hover:greyscale", "shadow-lg", "rounded-xl");
+        projectPhoto.classList.add("transition-all", "duration-550", "hover:opacity-30", "transition-opacity", "shadow-lg", "rounded-xl", "block");
 
         const projectInfo = document.createElement("p");
         projectInfo.classList.add("mx-8", "mb-20")
-        projectInfo.innerText =  `${info.title} \n\r\n ${info.description} \n`;
+        projectInfo.innerText =  `\n\r\n ${info.title} \n\r\n ${info.description} \n`;
 
         const projectLink = document.createElement("a");
         projectLink.href = `${info.link}`;
@@ -105,8 +105,10 @@ fetch('./Projects/projects.json')
         icon.classList.add("fa-brands", "fa-square-github", "fa-2xl");
 
         projectLink.appendChild(icon);
-        hoverDiv.appendChild(projectLink, projectInfo)
-        mainDiv.appendChild(projectPhoto, hoverDiv)
+        hoverDiv.appendChild(projectLink)
+        hoverDiv.appendChild(projectInfo)
+        mainDiv.appendChild(projectPhoto)
+        mainDiv.appendChild(hoverDiv)
         projectGrid.appendChild(mainDiv)
         
         });
