@@ -80,22 +80,35 @@ fetch('./Projects/projects.json')
     })
     .then((data)=>{
         data.projects.forEach((info) => {
+
+        const mainDiv = document.createElement("div");
+        mainDiv.classList.add("block")
+
+        const hoverDiv = document.createElement("div");
+        hoverDiv.classList.add("absolute", "inset-0", "flex", "flex-col", "items-center", "justify-center", "opacity-0", "hover:opacity-100", "bg-amber-50", "bg-opacity-50", "transition-opacity", "duration-250")
+        
+
         const projectPhoto = document.createElement("img");
-        const projectInfo = document.createElement("p");
-        const projectLink = document.createElement("a")
         projectPhoto.src = info.image;
         projectPhoto.alt = info.alt;
-        projectPhoto.classList.add("m-w-[20%]")
-        projectPhoto.classList.add("w-96")
-        projectInfo.innerText =  `${info.description} \n \n`;
+        projectPhoto.classList.add("transition-all", "duration-250", "hover:greyscale", "shadow-lg", "rounded-xl");
+
+        const projectInfo = document.createElement("p");
+        projectInfo.classList.add("mx-8", "mb-20")
+        projectInfo.innerText =  `${info.title} \n\r\n ${info.description} \n`;
+
+        const projectLink = document.createElement("a");
         projectLink.href = `${info.link}`;
         projectLink.target='blank'
-        projectLink.innerText = `${info.title}`;
-        projectInfo.classList.add("mx-8")
-        projectLink.classList.add("text-xl");
-        projectGrid.appendChild(projectPhoto);
-        projectGrid.appendChild(projectLink);
-        projectGrid.appendChild(projectInfo);
+
+        const icon = document.createElement("i")
+        icon.classList.add("fa-brands", "fa-square-github", "fa-2xl");
+
+        projectLink.appendChild(icon);
+        hoverDiv.appendChild(projectLink, projectInfo)
+        mainDiv.appendChild(projectPhoto, hoverDiv)
+        projectGrid.appendChild(mainDiv)
         
         });
     })
+  

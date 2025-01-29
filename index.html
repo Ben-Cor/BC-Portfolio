@@ -22,7 +22,7 @@
 <!-- <img src="Images/grunge.jpg" alt="" id="bgImage" class="fixed z-0 opacity-10 items-stretch"> -->
 
     <header id="top">
-        <div id="dropdown" class="py-6 pl-4">
+        <div id="dropdown" class="hidden md:block py-6 pl-4">
             <button class="fixed right-6 top-6 w-[50px] h-[50px] amber-50 bg-slate-800 p-3 rounded-3xl">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -32,6 +32,15 @@
                 <a href="#code" class="block p-2 m-2 bg-amber-50 rounded-2xl">Coding</a>
                 <a href="#about" class="block p-2 m-2 bg-amber-50 rounded-2xl">About</a>
                 <a href="#contact" class="block p-2 m-2 bg-amber-50 rounded-2xl">Contact</a>
+            </div>
+        </div>
+        <div id="dropdown" class="fixed top-0 block md:hidden py-2 px-3 w-[100%] bg-amber-50">
+            <div class="grid grid-cols-5 gap-2 w-[100%]">
+                <a href="#intro" class="block">Intro</a>
+                <a href="#career" class="block">Career</a>
+                <a href="#code" class="block">Coding</a>
+                <a href="#about" class="block">About</a>
+                <a href="#contact" class="block">Contact</a>
             </div>
         </div>
     </header>
@@ -87,7 +96,8 @@
                 While undertaking a distance learning course in order to obtain a <strong class="text-2xl mx-1 font-normal">NCFE Level 2 Certificate in Understanding Coding</strong>, I learnt about the development lifecycle as well as best practice and technical terminology.
                 Below you can see some of the projects I have developed.</p>
             <h4 class="md:text-4xl text-2xl my-10">Coding Projects</h4>
-            <div id="projectGrid" class="md:grid flex md:grid-cols-[2fr_1fr_2fr] flex-col items-center justify-center max-w-[90%] gap-8 my-2">
+            <div id="projectGrid" class=" flex flex-col items-center justify-center max-w-[80%] gap-20 my-2">
+                
             </div>
         </div>
 
@@ -139,7 +149,7 @@
 
     <footer id="footer" class="pb-5 bg-blue-300">
         
-        <a href="#top" class="fixed bottom-4 right-6 px-4 py-3 bg-slate-800 h-12 rounded-3xl">
+        <a href="#top" class="animate-bounce fixed bottom-4 right-6 px-4 py-3 bg-slate-800 h-12 rounded-3xl">
             <i class="fa-solid fa-arrow-up"></i>
         </a>
         
