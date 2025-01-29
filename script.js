@@ -139,36 +139,34 @@ fetch('./Projects/projects.json')
   
 
 
+
     // scroll background
 
-
-
 // var bg1 = "linear-gradient(90deg, rgba(255,251,235,0.99) 44%, rgba(254,243,199,0.99) 100%)";
-// var bg1_5 = "rgb(255,251,235)"
 // var bg2 = "linear-gradient(90deg, rgba(30,41,59,1) 20%, rgba(15,23,42,1) 95%)";
 // var bg3 = "linear-gradient(90deg, rgba(147,197,253,1) 20%, rgba(96,165,250,1) 95%)";
-// const body = document.querySelector("body")
+// var place = ["#about", "#career", "#code", "#hobby", "#contact"]
+// // const options = {
+// //   root: document.querySelector("#scrollArea"),
+// //   rootMargin: "0px",
+// //   threshold: 0.1,
+// // };
 
-// document.addEventListener("scroll touchmove", () => {
-//   if ((document).scrollTop() >= document.getElementById("intro").position().top) {
-//     body.style.background = bg2;
-
-// }
-// else if ((document).scrollTop() >= document.getElementById("career").position().top) {
-//     body.style.background = bg3;
-
-// }
-// else if ((document).scrollTop() >= document.getElementById("about").position().top) {
-//   body.style.background = bg2;
-
-// }
-// else if ((document).scrollTop() >= document.getElementById("contact").position().top) {
-//   body.style.background = bg3;
-
-// }
-// else {
-//     body.style.background = bg1
-// }
+// if (
+//   "IntersectionObserver" in window &&
+//   "IntersectionObserverEntry" in window &&
+//   "intersectionRatio" in window.IntersectionObserverEntry.prototype
+// ) {
+// let observer = new IntersectionObserver(entries => {
+//   if (entries[0].boundingClientRect.top < 0) {
+//     document.body.style.background = bg3;
+//   } 
+//   else if (entries[0].boundingClientRect.top < 0) {
+//     document.body.style.background = bg2;
+//   }
+//   else {
+//     document.body.style.background = bg1;
+//   }
 // });
-
-
+// observer.observe(document.querySelector(place));
+// }
