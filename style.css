@@ -9,7 +9,7 @@ html {
 }
 
 body{
-    font-family: "Cutive Mono", serif;
+    font-family: "DM Mono", serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -68,6 +68,10 @@ a {
   background-size: 100% 100%;
 }
 
+#contact i {
+  color: rgba(30,41,59,1);
+}
+
 #footer {
   background: rgb(147,197,253);
   background: linear-gradient(90deg, rgba(147,197,253,1) 20%, rgba(96,165,250,1) 95%); 
@@ -77,3 +81,4 @@ a {
 footer i {
   color: oklch(0.987 0.022 95.277);
 }
+

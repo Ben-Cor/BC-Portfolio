@@ -39,7 +39,7 @@ function typeWriter() {
 }
 
 var character2 = 0;
-const txt2 = '<p> I code things </p>_';
+const txt2 = '<p> I code things </p>|';
 const codeText = document.getElementById("iCode");
 
 function cursorBlink() {
