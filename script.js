@@ -179,3 +179,5 @@ const observer = new IntersectionObserver((entries) => {
 places.forEach((place) => {
   observer.observe(place);
 });
+
+
