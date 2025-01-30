@@ -110,7 +110,7 @@ fetch('./Projects/projects.json')
         
 
         const projectPhoto = document.createElement("img");
-        projectPhoto.src = `./projects/project-Images/${info.image}`;
+        projectPhoto.src = `./Projects/project-Images/${info.image}`;
         projectPhoto.alt = info.alt;
         projectPhoto.classList.add("transition-all", "duration-550", "hover:opacity-30", "transition-opacity", "shadow-lg", "rounded-xl", "block");
 
@@ -141,9 +141,6 @@ fetch('./Projects/projects.json')
     // scroll background
 
 
-// const bg1 = "linear-gradient(90deg, rgba(255,251,235,0.99) 44%, rgba(254,243,199,0.99) 100%)";
-// const bg2 = "linear-gradient(90deg, rgba(30,41,59,1) 20%, rgba(15,23,42,1) 95%)";
-// const bg3 = "linear-gradient(90deg, rgba(147,197,253,1) 20%, rgba(96,165,250,1) 95%)";
 const bg1 = "rgba(255,251,235,0.9)";
 const bg2 = "rgba(30,41,59,0.95)";
 const bg3 = "rgba(147,197,253,0.9)";
