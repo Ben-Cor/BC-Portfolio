@@ -69,6 +69,9 @@ function typeWriter2() {
 
 typeWriter();
 
+
+
+
 // typewriter about
 
 // var characterAbout = 0;
@@ -90,6 +93,9 @@ typeWriter();
 // aboutText.addEventListener('blur', clearAbout)
 
 // typeWriterAbout();
+
+
+
 
 
 
@@ -142,31 +148,32 @@ fetch('./Projects/projects.json')
 
     // scroll background
 
-// var bg1 = "linear-gradient(90deg, rgba(255,251,235,0.99) 44%, rgba(254,243,199,0.99) 100%)";
-// var bg2 = "linear-gradient(90deg, rgba(30,41,59,1) 20%, rgba(15,23,42,1) 95%)";
-// var bg3 = "linear-gradient(90deg, rgba(147,197,253,1) 20%, rgba(96,165,250,1) 95%)";
-// var place = ["#about", "#career", "#code", "#hobby", "#contact"]
-// // const options = {
-// //   root: document.querySelector("#scrollArea"),
-// //   rootMargin: "0px",
-// //   threshold: 0.1,
-// // };
 
-// if (
-//   "IntersectionObserver" in window &&
-//   "IntersectionObserverEntry" in window &&
-//   "intersectionRatio" in window.IntersectionObserverEntry.prototype
-// ) {
-// let observer = new IntersectionObserver(entries => {
-//   if (entries[0].boundingClientRect.top < 0) {
-//     document.body.style.background = bg3;
-//   } 
-//   else if (entries[0].boundingClientRect.top < 0) {
-//     document.body.style.background = bg2;
-//   }
-//   else {
-//     document.body.style.background = bg1;
-//   }
-// });
-// observer.observe(document.querySelector(place));
-// }
+const bg1 = "linear-gradient(90deg, rgba(255,251,235,0.99) 44%, rgba(254,243,199,0.99) 100%)";
+const bg2 = "linear-gradient(90deg, rgba(30,41,59,1) 20%, rgba(15,23,42,1) 95%)";
+const bg3 = "linear-gradient(90deg, rgba(147,197,253,1) 20%, rgba(96,165,250,1) 95%)";
+var places = document.querySelectorAll('.bgMarker')
+
+
+const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+
+                if (entry.target.id === "about"|| entry.target.id === "hobby") {
+                  document.body.style.background = bg2
+                } else if (entry.target.id === "career"|| entry.target.id === "contact") {
+                  document.body.style.background = bg3
+                } else if (entry.target.id === "code"||entry.target.id === "avatar"){
+                  document.body.style.background = bg1
+                }
+            
+
+            } 
+        });
+    },
+    { threshold: 0.4 }
+);
+
+places.forEach((place) => {
+  observer.observe(place);
+});
