@@ -2,6 +2,11 @@ header i {
     color: oklch(0.987 0.022 95.277);
 }
 
+html {
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 33%, rgba(0,0,0,1) 95%); ;
+}
+
 body{
     font-family: "DM Mono", serif;
     font-weight: 400;
@@ -27,10 +32,21 @@ h4 {
   font-style: normal;
 }
 
+h6 {
+  font-family: "Chakra Petch", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 strong {
   font-family: "Chakra Petch", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.blinkoff {
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
 }
 
 a {
@@ -44,8 +60,7 @@ a {
 }
 
 #footer {
-  background: rgb(147,197,253);
-  background-color: rgba(147,197,253,1);
+  background-color: transparent;
 }
 
 footer i {

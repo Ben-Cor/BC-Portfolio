@@ -71,32 +71,24 @@ typeWriter();
 
 
 
-
-// typewriter about
-
-// var characterAbout = 0;
-// const txtAbout = 'About';
-// const aboutText = document.getElementById("introHeading")
-
-// function typeWriterAbout() {
-//     if (characterAbout < txtAbout.length){
-//     aboutText.textContent += txtAbout.charAt(characterAbout);
-//     characterAbout++;
-//     setTimeout(typeWriterAbout, 100);}
-//   }
-
-//   function clearAbout (){
-//     txtAbout.textContent = "";
-//   }
-
-// aboutText.addEventListener("focusIn", typeWriterAbout);
-// aboutText.addEventListener('blur', clearAbout)
-
-// typeWriterAbout();
+// cursor blink
 
 
+const headings = document.querySelectorAll('h4');
 
+headings.forEach((heading) => {
+  const cursorElement = document.createElement('span');
+  cursorElement.textContent = '|';
+  cursorElement.classList.add('blinkoff');
+  heading.appendChild(cursorElement);
 
+  function cursorBlink() {
+    cursorElement.classList.toggle('blinkoff');
+    setTimeout(cursorBlink, 500);
+  }
+
+  cursorBlink();
+});
 
 
 // json import and grid items
@@ -152,9 +144,9 @@ fetch('./Projects/projects.json')
 // const bg1 = "linear-gradient(90deg, rgba(255,251,235,0.99) 44%, rgba(254,243,199,0.99) 100%)";
 // const bg2 = "linear-gradient(90deg, rgba(30,41,59,1) 20%, rgba(15,23,42,1) 95%)";
 // const bg3 = "linear-gradient(90deg, rgba(147,197,253,1) 20%, rgba(96,165,250,1) 95%)";
-const bg1 = "rgba(255,251,235,0.99)";
-const bg2 = "rgba(30,41,59,1)";
-const bg3 = "rgba(147,197,253,1)";
+const bg1 = "rgba(255,251,235,0.9)";
+const bg2 = "rgba(30,41,59,0.95)";
+const bg3 = "rgba(147,197,253,0.9)";
 var places = document.querySelectorAll('.bgMarker')
 var tHold = 0.5
 
