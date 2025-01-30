@@ -6,7 +6,7 @@ body{
     font-family: "DM Mono", serif;
     font-weight: 400;
     font-style: normal;
-    transition: background 4s ease;
+    transition: background-color 200ms ease;
 }
 
 h1 {
@@ -45,8 +45,7 @@ a {
 
 #footer {
   background: rgb(147,197,253);
-  background: linear-gradient(90deg, rgba(147,197,253,1) 20%, rgba(96,165,250,1) 95%); 
-  background-size: 100% 100%;
+  background-color: rgba(147,197,253,1);
 }
 
 footer i {

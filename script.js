@@ -149,29 +149,42 @@ fetch('./Projects/projects.json')
     // scroll background
 
 
-const bg1 = "linear-gradient(90deg, rgba(255,251,235,0.99) 44%, rgba(254,243,199,0.99) 100%)";
-const bg2 = "linear-gradient(90deg, rgba(30,41,59,1) 20%, rgba(15,23,42,1) 95%)";
-const bg3 = "linear-gradient(90deg, rgba(147,197,253,1) 20%, rgba(96,165,250,1) 95%)";
+// const bg1 = "linear-gradient(90deg, rgba(255,251,235,0.99) 44%, rgba(254,243,199,0.99) 100%)";
+// const bg2 = "linear-gradient(90deg, rgba(30,41,59,1) 20%, rgba(15,23,42,1) 95%)";
+// const bg3 = "linear-gradient(90deg, rgba(147,197,253,1) 20%, rgba(96,165,250,1) 95%)";
+const bg1 = "rgba(255,251,235,0.99)";
+const bg2 = "rgba(30,41,59,1)";
+const bg3 = "rgba(147,197,253,1)";
 var places = document.querySelectorAll('.bgMarker')
+var tHold = 0.5
 
+function checkWidth() {
+  if (screen.width<=850){ 
+    tHold = 0.15 }
+  else {
+    tHold = 0.35
+  }
+}
+
+checkWidth();
 
 const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
 
                 if (entry.target.id === "about"|| entry.target.id === "hobby") {
-                  document.body.style.background = bg2
+                  document.body.style.backgroundColor = bg2
                 } else if (entry.target.id === "career"|| entry.target.id === "contact") {
-                  document.body.style.background = bg3
+                  document.body.style.backgroundColor = bg3
                 } else if (entry.target.id === "code"||entry.target.id === "avatar"){
-                  document.body.style.background = bg1
+                  document.body.style.backgroundColor = bg1
                 }
             
 
             } 
         });
     },
-    { threshold: 0.2 }
+    { threshold: tHold }
 );
 
 places.forEach((place) => {

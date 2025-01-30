@@ -3,21 +3,21 @@
         {
             "title": "Space invaders game",
             "description": "A JavaScript version of this classic game",
-            "image": "projects/project-Images/project_1.jpg",
+            "image": "./projects/project-Images/project_1.jpg",
             "alt": "Screenshot of a space invaders style game",
             "link": "https://github.com/wowie"
         },
         {
             "title": "A to-do list app",
             "description": "An app built with React that allows users to track tasks with reminders, tags, and classes that can be assigned.",
-            "image": "projects/project-Images/project_2.jpg",
+            "image": "./projects/project-Images/project_2.jpg",
             "alt": "To-do list app screenshot",
             "link": "https://github.com/zowie"
         },
         {
             "title": "My third project",
             "description": "it's also good",
-            "image": "projects/project-Images/project_3.jpg",
+            "image": "./projects/project-Images/project_3.jpg",
             "alt": "some alt text",
             "link": "https://github.com/kapowie"
         }
