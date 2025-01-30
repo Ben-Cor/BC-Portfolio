@@ -103,7 +103,7 @@ fetch('./Projects/projects.json')
         data.projects.forEach((info) => {
 
         const mainDiv = document.createElement("div");
-        mainDiv.classList.add("inline-block", "relative")
+        mainDiv.classList.add("inline-block", "relative", "max-w-[350px]")
 
         const hoverDiv = document.createElement("div");
         hoverDiv.classList.add("md:absolute", "w-[100%]", "inset-0", "flex", "flex-col", "items-center", "justify-center", "text-center", "md:opacity-0", "md:hover:opacity-100", "md:bg-amber-50", "pt-8", "md:bg-opacity-90", "transition-opacity", "duration-550", "rounded-xl")
