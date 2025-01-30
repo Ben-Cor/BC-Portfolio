@@ -110,7 +110,7 @@ fetch('./Projects/projects.json')
         
 
         const projectPhoto = document.createElement("img");
-        projectPhoto.src = info.image;
+        projectPhoto.src = `./projects/project-Images/${info.image}`;
         projectPhoto.alt = info.alt;
         projectPhoto.classList.add("transition-all", "duration-550", "hover:opacity-30", "transition-opacity", "shadow-lg", "rounded-xl", "block");
 

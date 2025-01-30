@@ -59,10 +59,6 @@ a {
   color: rgba(30,41,59,1);
 }
 
-#footer {
-  background-color: transparent;
-}
-
 footer i {
   color: oklch(0.987 0.022 95.277);
 }
