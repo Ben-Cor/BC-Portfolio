@@ -184,7 +184,7 @@ places.forEach((place) => {
 
 // image reveal
 
-if (screen.width>=850) {
+if (screen.width>=750) {
 
   const Images = document.querySelectorAll('.geoimageLeft');
 
