@@ -224,7 +224,7 @@ if (screen.width>=850) {
     })
     ImagesRight.forEach((Image) => {
       Image.classList.add('imageshow');
-    })}
+    })
 
     // const ImagesHidden = document.querySelectorAll('.imagehide');
 
@@ -237,4 +237,5 @@ if (screen.width>=850) {
     //   })
     //   ImagesHidden.forEach((Image) => {
     //     observerImageHidden.observe(Image);
-      // })}
+      // })
+  }
