@@ -44,6 +44,23 @@ strong {
   font-style: normal;
 }
 
+.geoimageLeft {
+  transform: translateX(-300px);
+  opacity: 0;
+  transition: 300ms;
+}
+
+.geoimageRight {
+  transform: translateX(300px);
+  opacity: 0;
+  transition: 300ms;
+}
+
+.imageshow {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 .blinkoff {
   opacity: 0;
   transition: opacity 0.1s ease-in-out;

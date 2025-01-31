@@ -181,3 +181,33 @@ places.forEach((place) => {
 });
 
 
+
+// image reveal
+
+const Images = document.querySelectorAll('.geoimageLeft');
+
+const observerImage = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+        entry.target.classList.toggle('imageshow', entry.isIntersecting);
+      });
+      { rootMargin: "100px"
+       }
+  })
+
+  Images.forEach((Image) => {
+  observerImage.observe(Image);
+  });
+
+  const ImagesRight = document.querySelectorAll('.geoimageRight');
+
+const observerImage2 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+        entry.target.classList.toggle('imageshow', entry.isIntersecting);
+      });
+      { rootMargin: "100px"
+       }
+  })
+
+  ImagesRight.forEach((Image) => {
+  observerImage.observe(Image);
+  });
