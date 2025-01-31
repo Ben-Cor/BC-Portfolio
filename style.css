@@ -45,13 +45,13 @@ strong {
 }
 
 .geoimageLeft {
-  transform: translateX(-300px);
+  transform: translateX(-100px);
   opacity: 0;
   transition: 500ms;
 }
 
 .geoimageRight {
-  transform: translateX(300px);
+  transform: translateX(100px);
   opacity: 0;
   transition: 500ms;
 }
@@ -87,3 +87,21 @@ footer i {
   color: oklch(0.987 0.022 95.277);
 }
 
+@media screen and (max-width: 1000px) {
+  .geoimageLeft {
+    transform: translateX(-40px);
+    opacity: 0;
+    transition: 500ms;
+  }
+  
+  .geoimageRight {
+    transform: translateX(40px);
+    opacity: 0;
+    transition: 500ms;
+  }
+  .imageshow {
+    transform: translateX(0);
+    opacity: 1;
+    transition-delay: sec;
+  }
+ }

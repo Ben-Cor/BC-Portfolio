@@ -145,11 +145,13 @@ const bg1 = "rgba(255,251,235,0.9)";
 const bg2 = "rgba(30,41,59,0.95)";
 const bg3 = "rgba(147,197,253,0.9)";
 var places = document.querySelectorAll('.bgMarker')
-var tHold = 0.5
+var tHold = 0.15;
+
+document.body.style.background = bg1;
 
 function checkWidth() {
   if (screen.width<=850){ 
-    tHold = 0.15 }
+    tHold = 0.1 }
   else {
     tHold = 0.35
   }
@@ -173,7 +175,8 @@ const observer = new IntersectionObserver((entries) => {
             } 
         });
     },
-    { threshold: tHold }
+    { threshold: tHold,
+     }
 );
 
 places.forEach((place) => {
@@ -184,9 +187,9 @@ places.forEach((place) => {
 
 // image reveal
 
-if (screen.width>=800) {
+// if (screen.width>=850) {
 
-  const Images = document.querySelectorAll('.geoimageLeft');
+  const images = document.querySelectorAll('.geoimageLeft');
 
   const observerImage = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -196,11 +199,11 @@ if (screen.width>=800) {
         }
     })
 
-    Images.forEach((Image) => {
+    images.forEach((Image) => {
     observerImage.observe(Image);
     });
 
-    const ImagesRight = document.querySelectorAll('.geoimageRight');
+    const imagesRight = document.querySelectorAll('.geoimageRight');
 
   const observerImage2 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -211,12 +214,12 @@ if (screen.width>=800) {
         }
     })
 
-    ImagesRight.forEach((Image) => {
+    imagesRight.forEach((Image) => {
     observerImage2.observe(Image);
     });
-  } 
+  // } 
   
-  else {
+  // else {
     const Images = document.querySelectorAll('.geoimageLeft');
     const ImagesRight = document.querySelectorAll('.geoimageRight');
     Images.forEach((Image) => {
@@ -238,4 +241,4 @@ if (screen.width>=800) {
     //   ImagesHidden.forEach((Image) => {
     //     observerImageHidden.observe(Image);
       // })
-  }
+  // }
