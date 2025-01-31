@@ -192,7 +192,7 @@ if (screen.width>=850) {
     entries.forEach((entry) => {
           entry.target.classList.toggle('imageshow', entry.isIntersecting);
         });
-        { rootMargin: "100px"
+        { rootMargin: "-100px"
         }
     })
 
@@ -206,14 +206,17 @@ if (screen.width>=850) {
     entries.forEach((entry) => {
           entry.target.classList.toggle('imageshow', entry.isIntersecting);
         });
-        { rootMargin: "100px"
+        { threshold: 1
+          rootMargin: "-300px"
         }
     })
 
     ImagesRight.forEach((Image) => {
-    observerImage.observe(Image);
+    observerImage2.observe(Image);
     });
-  } else {
+  } 
+  
+  else {
     const Images = document.querySelectorAll('.geoimageLeft');
     const ImagesRight = document.querySelectorAll('.geoimageRight');
     Images.forEach((Image) => {
@@ -221,6 +224,17 @@ if (screen.width>=850) {
     })
     ImagesRight.forEach((Image) => {
       Image.classList.add('imageshow');
-    })
+    })}
 
-  }
+    // const ImagesHidden = document.querySelectorAll('.imagehide');
+
+    // const observerImageHidden = new IntersectionObserver((entries) => {
+    //   entries.forEach((entry) => {
+    //         entry.target.classList.toggle('imageshow2', entry.isIntersecting);
+    //       });
+    //       { rootMargin: "-100px"
+    //       }
+    //   })
+    //   ImagesHidden.forEach((Image) => {
+    //     observerImageHidden.observe(Image);
+      // })}

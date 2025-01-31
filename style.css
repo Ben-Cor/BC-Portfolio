@@ -47,11 +47,16 @@ strong {
 .geoimageLeft {
   transform: translateX(-300px);
   opacity: 0;
-  transition: 300ms;
+  transition: 500ms;
 }
 
 .geoimageRight {
   transform: translateX(300px);
+  opacity: 0;
+  transition: 500ms;
+}
+
+.imagehide {
   opacity: 0;
   transition: 300ms;
 }
@@ -59,6 +64,7 @@ strong {
 .imageshow {
   transform: translateX(0);
   opacity: 1;
+  transition-delay: sec;
 }
 
 .blinkoff {
